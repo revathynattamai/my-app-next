@@ -1,0 +1,67 @@
+.movieContainer {
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .movie {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 26%;
+    justify-content: baseline;
+  }
+
+  .imageProcessing {
+    aspect-ratio: 2 / 3;
+    background-image: url('https://test.create.diagnal.com/images/placeholder_for_missing_posters.png');
+  }
+
+  .spanProcessing {
+    font-family: 'TitilliumWebLight', sans-serif;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 2px;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("https://test.create.diagnal.com/images/nav_bar.png");
+  z-index: 1;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.leftNav {
+  font-family: 'TitilliumWebRegular', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .imageInNavLeft {
+    max-width: 10%;
+    padding-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.rightNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 50%;
+
+  .imageInNavRight {
+    max-width: 10%;
+    margin: 3px 10px;
+  }
+
+  .inputInNav {
+    max-width: 50%;
+    cursor: pointer;
+  }
+}
